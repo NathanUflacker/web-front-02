@@ -4,6 +4,7 @@ import ConteudoPrincipal from './componentes/ConteudoPrincipal/ConteudoPrincipal
 import FormContato from './componentes/FormContato/FormContato'
 import Habilidades from './componentes/Habilidades/Habilidades'
 import InfoPessoais from './componentes/InfoPessoais/InfoPessoais'
+import { Outlet } from 'react-router-dom';
 
 function App() {
   
@@ -11,7 +12,7 @@ function App() {
   return (
     <>
       <Banner/>
-      <ConteudoPrincipal/>
+      <Outlet/>
     </>
   )
 }
